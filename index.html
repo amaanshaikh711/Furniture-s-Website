@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadaf Furnitures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="logo-container">
+                <img src="images/logo.JPG" alt="Furniture World Logo">
+                <h1 class="cmpny-name">Nadaf Furniture</h1> 
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="banner">
+        <div id="banner-text">
+            <h1>Welcome to<br>Nadaf Furnitures</h1>
+            <p>Explore the finest selection of Sofas, Beds, Chairs, and more. Quality craftsmanship for your home.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+       
+    </section>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="services-item">
+            <img src="images/quality.png" alt="Quality Guarantee">
+            <h3>Quality Guarantee</h3>
+        </div>
+        <div class="services-item">
+            <img src="images/fd.png" alt="Free Delivery">
+            <h3>Free Delivery</h3>
+        </div>
+        <div class="services-item">
+            <img src="images/discount.png" alt="Exclusive Discounts">
+            <h3>Exclusive Discounts</h3>
+        </div>
+        <div class="services-item">
+            <img src="images/secure.png" alt="Secure Payments">
+            <h3>Secure Payments</h3>
+        </div>
+    </div>
+    
+    <!-- Product Categories -->
+    <section id="product-categories">
+        <h2 class="section-title">Our Furniture</h2>
+        <div class="category-list">
+            <a href="product.html#sofas">
+                <img src="images/sofa.webp" alt="Sofas">
+                <p>Sofas</p>
+            </a>
+            <a href="product.html#beds">
+                <img src="images/bed2.webp" alt="Beds">
+                <p>Beds</p>
+            </a>
+            <a href="product.html#chairs">
+                <img src="images/chair.webp" alt="Chairs">
+                <p>Chairs</p>
+            </a>
+            <a href="product.html#tables">
+                <img src="images/table.jpg" alt="Tables">
+                <p>Tables</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+<section id="video-section">
+    <video autoplay muted loop id="background-video">
+        <source src="images/f2-video..mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+        <h2>Enhance Your Living Space</h2>
+        <p>Discover the elegance of our furniture collection through our video.</p>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>Nadaf Furniture</h3>
+            <p>Your ultimate destination for premium furniture.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>Created by Sharfealam</p>
+            <p>© Copyright 2024</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
